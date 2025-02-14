@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Improved Profile UI</title>
+  <link rel="stylesheet" href="Profle4.css">
+</head>
+<body>
+
+  <div class="profile-container">
+    <!-- Profile Card -->
+    <div class="card profile-card">
+      <img src="Nedu.jpg" alt="Profile Picture" class="profile-img">
+      <h1>Seyi's Profile</h1>
+      <button class="edit-btn" onclick="toggleEditForm()">Edit Profile</button>
+    </div>
+
+    <!-- About Me Card -->
+    <div class="card">
+      <h3>About Me</h3>
+      <p>Specialist in Virtual Assistance and Digital Marketing.</p>
+    </div>
+
+    <!-- Location Card -->
+    <div class="card">
+      <h3>Location</h3>
+      <p>Lagos, Nigeria</p>
+    </div>
+
+    <!-- Experience Card -->
+    <div class="card">
+      <h3>Experience</h3>
+      <p>2 years in Digital Marketing & Product Management</p>
+    </div>
+
+    <!-- Hidden Edit Form -->
+    <div class="edit-form" id="editForm">
+      <h2>Edit Profile</h2>
+      <form id="profileForm">
+        <label for="aboutMe">About Me:</label>
+        <textarea id="aboutMe" rows="4">Specialist in Virtual Assistance and Digital Marketing.</textarea>
+        
+        <label for="location">Location:</label>
+        <input type="text" id="location" value="Lagos, Nigeria">
+        
+        <label for="experience">Experience:</label>
+        <input type="text" id="experience" value="2 years in Digital Marketing & Product Management">
+        
+        <button type="submit" class="save-btn">Save Changes</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="Profile4.js"></script>
+</body>
+</html>
